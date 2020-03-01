@@ -27,6 +27,6 @@ mod tests {
 
     #[bench]
     fn bench_no_indirection(b: &mut Bencher) {
-        b.iter(|| find_nth_odd(test::black_box(1_000_000_000_000_000)))
+        b.iter(|| find_nth_odd(test::black_box(1_000_000_000_000)))
     }
 }
